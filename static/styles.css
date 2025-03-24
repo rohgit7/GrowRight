@@ -1,0 +1,195 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #d4a824;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #122620;
+    color: #122620;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f4ebd0;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 30px;
+    background: #6c8c3e;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.add-farmer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #b68d40;
+    border-radius: 15px;
+    background: #03513a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+.add-farmer-form label {
+    font-size: 1.2rem;
+    color: #f4ebd0;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+.add-farmer-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #d6ad60;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f4ebd0;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.add-farmer-form button {
+    background-color: #b68d40;
+    color: #122620;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-farmer-form button:hover {
+    background-color: #d6ad60;
+    transform: translateY(-3px);
+}
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result-card {
+    background-color: #333;
+    border: 2px solid #6c8c3e;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    text-align: left;
+    color: #f4ebd0;
+}
+
+.result-card strong {
+    color: #d6ad60;
+}
+
+.no-results {
+    font-size: 1.2rem;
+    color: #b68d40;
+    margin-top: 15px;
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: #6c8c3e;
+    color: #f4ebd0;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-container a:hover {
+    background-color: #b68d40;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .results-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .add-farmer-form {
+        width: 90%;
+    }
+}
+
+.find-button {
+    background-color: #b68d40;
+    color: #122620;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.find-button:hover {
+    background-color: #d6ad60;
+    transform: translateY(-3px);
+}
+
+#resource_query {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #d6ad60;
+    border-radius: 8px;
+    background-color: #3333334e;
+    color: #f4ebd0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#resource_query:focus {
+    border-color: #b68d40;
+    box-shadow: 0 0 5px #b68d40;
+}
+
+label {
+    font-size: larger;
+    font-weight: bold;
+}

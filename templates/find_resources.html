@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Resources</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Find Resources</h1>
+    </header>
+    <div class="container">
+        <form method="POST" class="search-form">
+            <label for="resource_query">Search for a Resource:</label><br>
+            <input type="text" id="resource_query" name="resource_query" placeholder="Ex:Plough" required><br><br>
+            <button type="submit" class="find-button">Search</button>
+        </form>
+        <h2>Results:</h2>
+        <div class="results-container">
+            {% for farmer in farmers %}
+            <div class="result-card">
+                <strong>Name:</strong> {{ farmer.name }} <br>
+                <strong>Location:</strong> {{ farmer.location }} <br>
+                <strong>Contact:</strong> {{ farmer.contact }}
+            </div>
+            {% else %}
+            <p class="no-results">No resources found.</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

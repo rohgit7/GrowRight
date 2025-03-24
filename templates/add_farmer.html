@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Farmer</title>
+    <link rel="stylesheet" href="static\styles.css">
+</head>
+<body>
+    <h1>Add Farmer Details and Resources</h1>
+    <form method="POST" class="add-farmer-form">
+        <label for="name">Farmer Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="contact">Contact:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+        <label for="resources">Resources (comma-separated):</label><br>
+        <input type="text" id="resources" name="resources" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

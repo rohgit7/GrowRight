@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowRight - Sustainable Solutions</title>
+  <meta name="description" content="Sustainable solutions for a greener future">
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+  <link rel="stylesheet" href="static/landing_styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#">GrowRight</a>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#vision">Vision</a></li>
+          </ul>
+        </div>
+        <div class="theme-toggle">
+          <button id="theme-toggle-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Sustainable Solutions for Farmers for a better Tomorrow</h1>
+          <p>Empowering Small and Marginal Farmers with AI-Driven Agricultural Solutions</p>
+          <div class="hero-buttons">
+            <a href="#solutions" class="btn btn-primary">Explore Solutions</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="static/images/farming.jpg" alt="Sustainable Technology" width="500" height="300">
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Solutions Section -->
+     <section id="solutions" class="section solutions-section">
+        <div class="container">
+          <h2 class="section-title">Our Solutions</h2>
+      
+          <div class="solutions-grid">
+            <div class="solution-card">
+              <img src="static/images/crops.jpg" alt="Green Energy Solutions" width="300" height="200">
+              <h3>AI Crop Finder</h3>
+              <p>AI Soil based Crop recommendation System</p>
+              <form action="/soil_crop">
+              <button type="submit" class="btn btn-small">Click here</button>
+              </form>
+            </div>
+            <div class="solution-card">
+              <img src="static/images/irrigation.jpeg" alt="Smart Resource Management" width="300" height="200">
+              <h3>AI farming practice</h3>
+              <p>AI weather based Farming Practice recommendation system</p>
+              <form action="/weather_predict">
+                <button type="submit" class="btn btn-small">Click here</button>
+                </form>
+            </div>
+            <div class="solution-card">
+              <img src="static/images/Plough.png" alt="Sustainable Technology" width="300" height="200">
+              <h3>Resource Pooling</h3>
+              <p>Find and sell surplus resources online from farmers around</p>
+              <form action="/resource_pooling">
+                <button type="submit" class="btn btn-small">Click here</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-subtitle">At GrowRight, involves an AI prediction model that analyzes soil and weather conditions to provide insights. This likely aims to optimize agricultural productivity by offering tailored recommendations for crop selection, planting schedules, or irrigation needs based on environmental data.</p>
+        
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon">🌱</div>
+            <h3>Our Mission</h3>
+            <p>Using AI to make sustainable solutions that reduce environmental impact while driving growth of marginal farmers.</p>
+          </div>
+         <div class="about-card">
+            <div class="card-icon">👥</div>
+            <h3>Our Team</h3>
+            <p>A team of students aiming to impact society with the support of technology</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+   
+    <section id="vision" class="section vision-section">
+      <div class="container">
+        <h2 class="section-title">Our Vision</h2>
+        <p class="section-subtitle">Creating a world where economic growth and environmental sustainability go hand in hand</p>
+        
+        <div class="vision-content">
+          <div class="vision-text">
+            <p>At GrowRight, we envision a future where farmers thrive by adopting sustainable practices. Our goal is to make eco-friendly solutions accessible, efficient, and economically viable for agricultural communities of all sizes.</p>
+            <ul class="vision-points">
+                <li>AI-driven solutions for sustainable farming</li>
+                <li>Minimizing environmental impact with smart technology</li>
+                <li>Enhancing productivity through data-driven insights</li>
+                <li>Collaborating for a greener future in agriculture</li>
+              </ul>
+              
+          </div>
+          <div class="vision-image">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="Our Vision" width="400" height="300">
+          </div>
+        </div>
+      </div>
+    </section>
+    <button id="toggle-chatbot" class="chat-toggle-btn">C</button>
+
+  <div id="chat-container" class="chat-container hidden">
+    <div id="chat-box" class="chat-box">
+      <!-- Chat messages will appear here -->
+    </div>
+    <div class="chat-input">
+      <input id="user-input" type="text" placeholder="Type a message..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+  <script src="static/app.js"></script>
+</main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>GrowRight</h2>
+          <p>Sustainable solutions for a greener future</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#vision">Our Vision</a></li>
+        </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Solutions</h3>
+            <ul>
+              <li><a href="#solutions">Green Energy</a></li>
+              <li><a href="#solutions">Resource Management</a></li>
+              <li><a href="#solutions">Eco-Tech</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 GrowRight. All rights reserved.</p>
+     </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple theme toggle
+    document.getElementById('theme-toggle-btn').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>

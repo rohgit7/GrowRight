@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Predictor</title>
+    <link rel="stylesheet" href="static/styles1.css">
+</head>
+<body>
+    <div>
+    <h1>Crop Recommendation System - (AI-Driven)</h1>
+    <form action="/predict_crop" method="post">
+        <label for="soil_type">Soil Type (0: Loamy, 1: Sandy, 2: Clayey):</label>
+        <input type="number" id="soil_type" name="soil_type" required><br><br>
+
+        <label for="ph">pH Level:</label>
+        <input type="text" id="ph" name="ph" required><br><br>
+
+        <label for="nitrogen">Nitrogen (N):</label>
+        <input type="text" id="nitrogen" name="nitrogen" required><br><br>
+
+        <label for="phosphorus">Phosphorus (P):</label>
+        <input type="text" id="phosphorus" name="phosphorus" required><br><br>
+
+        <label for="potassium">Potassium (K):</label>
+        <input type="text" id="potassium" name="potassium" required><br><br>
+
+        <button type="submit">Predict Crop</button>
+    </form>
+
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+</div>
+</body>
+</html>
